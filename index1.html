@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servitech</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style1.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Servitech</h1>
+    <p>Servicio Técnico electrico/ linea Blanca</p>
+</header>
+
+<nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="banner">
+    <h2>Reparaciones • Instalaciones • Mantenimiento</h2>
+</div>
+
+<section id="servicios" class="services">
+
+    <div class="card">
+        <i class="fas fa-tools"></i>
+        <h3>Línea Blanca</h3>
+        <p>Lavadoras, refrigeradores, cocinas de induccion, secadoras y más.</p>
+       <button onclick="openGallery(['linea blanca.png', 'cosinadeinducion.jpg','refrigeradora.jpg'])">Ver</button>
+    </div>
+<div id="popup" class="popup" onclick="closeImage()">
+    <img id="popup-img">
+
+    <button class="nav-btn prev" onclick="event.stopPropagation(); prevImage()">⟨</button>
+    <button class="nav-btn next" onclick="event.stopPropagation(); nextImage()">⟩</button>
+</div>
+
+
+    <div class="card">
+        <i class="fas fa-bolt"></i>
+        <h3>Trabajos Eléctricos</h3>
+        <p>Instalaciones, reparaciones, cortos y tableros.</p>
+         <button onclick="openGallery(['medidorluz.jpg','trabajosytableroelectricos.jpg'])">Ver</button>
+      
+    </div>
+
+    <div class="card">
+        <i class="fas fa-fire"></i>
+        <h3>Calefones</h3>
+        <p>Gas, eléctricos, mantenimiento y repuestos.</p>
+        <button onclick="openGallery(['calefones.jpg'])">Ver</button>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-video"></i>
+        <h3>Cámaras de Seguridad</h3>
+        <p>Instalación, configuración y soporte técnico.</p>
+        <button onclick="openImage('')">Ver</button>
+ 
+</section>
+
+<section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <p>📞 <strong>+593983012210</strong></p>
+    <p>📧 <strong></strong></p>
+    <p>📍 Pifo,tumbaco, Valles/</p>
+</section>
+
+<footer>
+    © Servitech
+</footer>
+
+<!-- POPUP -->
+<div id="popup" class="popup" onclick="closeImage()">
+    <img id="popup-img">
+</div>
+
+<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/+593983012210" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- JS -->
+<script src="script1.js"></script>
+
+</body>
+</html>
